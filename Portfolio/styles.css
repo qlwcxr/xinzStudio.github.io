@@ -1,0 +1,206 @@
+/* styles.css */
+html {
+    font-family: verdana, sans-serif;
+    height: 100%; /* 設置html元素的高度為100%，以使footer固定在頁面底部 */
+}
+
+body {
+    margin: 0; /* 清除預設的body margin */
+    display: flex;
+    flex-direction: column;
+    min-height: 100%; /* 設置body的最小高度為100%，以使footer固定在頁面底部 */
+}
+
+footer {
+    text-align: center;
+    font-size: .9em;
+    padding: 1em;
+    grid-area: footer;
+    color: #a6aee1;
+    background: hsla(205, 32%, 74%, 0.372);  
+    border-radius: 3px;
+    margin-top: auto; /* 將footer置於頁面底部 */
+}
+
+section{
+    margin: 0 15%;
+    padding-top: 100px;
+}
+
+.top{
+    position: fixed;
+    width: 100%;
+}
+
+/*intro*/
+nav, footer {
+    background: hsla(205, 32%, 74%, 0.372);  
+     border-radius: 3px;
+}
+nav ul li a:link, nav ul li a:visited  {
+    color: #a6aee1;
+}
+nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+    color: #1825b8b8;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; /* 让列表项分布到容器的两端 */
+    align-items: center; /* 垂直居中对齐 */
+}
+nav ul li {
+    font-size: .9em;
+    text-transform: uppercase;
+    list-style-type: none; 
+    letter-spacing: .2em;
+    padding: .5em 1em;
+    margin: .5em;
+}
+nav ul li a {
+    display: block;
+}
+nav li{
+    text-align: center;
+}
+a{text-decoration:none}
+a:hover{text-decoration:none}
+.sider-menu-toggle {
+    margin-left: auto; /* 使用 margin-left: auto; 将该项推到右侧 */
+    color: #a6aee1;
+    cursor: pointer;
+}
+
+h2{
+    font-family: verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+/*timetable*/
+table{
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    width:100%;
+}
+th, td{
+    border: 2px solid rgba(92, 88, 88, 0.328);
+    border-radius: 10px;
+    height: 80px;
+    width: 80px;
+}
+th{
+    background-color: rgba(109, 214, 233, 0.061);
+    width: 80px;
+}
+
+/*intro*/
+.container {
+    display: flex;
+    align-items: flex-end; /* 让所有内容底部对齐 */
+}
+.image-group {
+    display: flex;
+    align-items: flex-end; /* 让图片底部对齐 */
+    margin-right: 100px; /* 调整图片组和文字之间的间距 */
+}
+.image-group img {
+    margin-right: 20px; /* 调整两张图片之间的间距 */
+}
+.text-content {
+    display: flex;
+    flex-direction: column;
+}
+.info-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.info-item {
+    flex: 1 1 calc(50% - 10px); /* 每项占据50%宽度并有间距 */
+}
+
+/*一鍵返回頂部*/
+#backToTopBtn {
+    display: none; /* 初始隐藏 */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: transparent; /* 背景透明 */
+    cursor: pointer;
+    padding: 0;
+}
+#backToTopBtn img {
+    width: 40px; /* 根据需要调整图片大小 */
+    height: 40px;
+}
+
+/* 用于生成滚动内容的样式 */
+.content {
+    height: 2000px;
+    background: linear-gradient(to bottom, #956161, #cccccc);
+    padding: 20px;
+}
+            
+/* Portfolio */
+.portfolio-container {
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+.portfolio-image {
+    flex: 1.5;
+    max-width: 100%;
+    margin-right: 20px;
+}
+.portfolio-description {
+    flex: 1;
+}
+
+/*icons*/
+.icons {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px; /* 圖標之間的間距 */
+}
+.icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*作業連結*/
+.styled-link {
+    display: inline-block;
+    border: 2px solid #e0e3ea;
+    border-radius: 10px; /* 倒角半径 */
+    padding: 10px 20px; /* 内部填充 */
+    color: #7f98d4;
+    text-decoration: none;
+    margin: 0 30px; /* 添加外边距以增加链接之间的间隔 */
+    text-decoration: none;
+}
+.styled-link:hover {
+    border: 2px solid #7f98d4;
+}
+
+/*homepage_background_video*/
+.gif-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('your-gif-file.gif') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+    opacity: .5;
+
+}
+
+

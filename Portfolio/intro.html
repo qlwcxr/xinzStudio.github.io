@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>previous works</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        
+        <button onclick="topFunction()" id="backToTopBtn" title="Go to top">
+            <img src="logos/icon/up-arrow.png" alt="Back to Top">
+        </button>
+    
+        <script>
+            // 获取按钮
+            var mybutton = document.getElementById("backToTopBtn");
+    
+            // 当用户向下滚动 20px 时，显示按钮
+            window.onscroll = function() {scrollFunction()};
+    
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+    
+            // 当用户点击按钮时，回到顶部
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+
+        
+        <nav class="top">
+            <ul>
+                <li><a href="intro.html">Intro</a></li>
+                <li><a href="previous works.html">previous works</a></li>
+                <li><a href="Content.html">content</a></li>
+                <li class="sider-menu-toggle" ><a href="homepage.html"><img src="logos/icon/home.png" width="25" height="25" alt="home_icon">
+                </a></li>
+            </ul> 
+        </nav>
+<div>
+            <section id="Intro" style="margin-top: 100px;">
+                <div class="container">
+                    <div class="image-group">
+                        <img src="images/hello.png" width="48" height="104" alt="Hello">
+                        <img src="images/Photo sticker.JPG" width="400" height="400" alt="Photo Sticker" style="border-top-left-radius: 60px; border-bottom-right-radius: 60px;">
+                    </div>
+                    <div class="text-content">
+                        <h1>陳信瑞  |Chen, Hsin-Jui</h1><br><br>
+                        <div class="info-group">
+                            <div class="info-item"><p><strong>BD.</strong><br>Aug.14, 2002</p></div>
+                            <div class="info-item"><p><strong>Major</strong><br>Media Design</p></div>
+                            <div class="info-item"><p><strong>Univ.</strong><br> CYUT . SIT</p></div>
+                            <div class="info-item"><p><strong>MBTI</strong><br>INFP-T</p></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div><br><br>
+
+        <div>
+            <section>
+            <h2>Intro</h2>
+                <div>
+                        <p>Hello everyone, I'm <strong>xinz</strong>! Welcome to my website , </p>
+                        <p>this is my 'Web design and programming の midterm exam Project'.</p>
+                        <p> I come from Taiwan, and if you'd like to learn more about me, feel free to browse my site!</p>
+                        <p>In this project, I'll be demonstrating my skills in web design and programming.</p>
+                        <p> Through this endeavor, I aim to showcase my passion for design.</p>
+                </div>
+            </section>
+        </div> 
+        <div>
+            <section>
+            <h2>SPECIALTY</h2>
+                <div>
+                    <div>
+                        <p>Graphic Design   - グラフィックデザイン</p>
+                        <p>Editing Video    - ビデオクリップ</p>
+                        <p>3D Modeling      - 3Dモデリング</p>
+                        <p>Photoshop        - 映像編集</p>
+                        <p>Photography      - 撮影</p>
+                    </div>
+                </div>
+            </section>
+        </div><br><br><br>
+
+        <footer>
+            <p>Copyright & Design by qlwcxr-2024 &reg</p>
+        </footer>
+    </div>
+    </body>  
+</html> 

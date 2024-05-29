@@ -1,0 +1,159 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>previous works</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        
+        <button onclick="topFunction()" id="backToTopBtn" title="Go to top">
+            <img src="logos/icon/up-arrow.png" alt="Back to Top">
+        </button>
+    
+        <script>
+            // 获取按钮
+            var mybutton = document.getElementById("backToTopBtn");
+    
+            // 当用户向下滚动 20px 时，显示按钮
+            window.onscroll = function() {scrollFunction()};
+    
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+    
+            // 当用户点击按钮时，回到顶部
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+
+        
+        <nav class="top">
+            <ul>
+                <li><a href="intro.html">Intro</a></li>
+                <li><a href="previous works.html">previous works</a></li>
+                <li><a href="Content.html">content</a></li>
+                <li class="sider-menu-toggle" ><a href="homepage.html"><img src="logos/icon/home.png" width="25" height="25" alt="home_icon">
+                </a></li>
+            </ul> 
+        </nav>
+
+
+        <section id="previous works">
+            <a href="html/BLACK GOOSE BISTRO.html" class="styled-link">Ass. I - BLACK GOOSE BISTRO</a>
+            <a href="html/Bistro Items To Go.html" class="styled-link">Ass. II - Bistro Items To Go</a>
+            <a href="html/menu_part.html" class="styled-link">Ass. III - menu_part.html</a>
+            <br><br><br>
+            <div class="portfolio-container">
+                <div class="portfolio-image">
+                    <img src="images/3D modeling.jpg" alt="atlantis" style="width:100%; border-radius: 10px;">
+                </div>
+                <div class="portfolio-description">
+                    <h3>3D modeling</h3>
+                    <p>Poseidon otter ver.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-container">
+                <div class="portfolio-image">
+                    <img src="images/I can't believe it.jpg" alt="atlantis" style="width:100%; border-radius: 10px;">
+                </div>
+                <div class="portfolio-description">
+                    <h3>LINE stickers</h3>
+                    <p>I can't believe it !</p>
+                </div>
+            </div>
+
+            <div class="portfolio-container">
+                <div class="portfolio-image">
+                    <img src="images/graphic design 01.jpg" alt="graphic design" style="width:100%; border-radius: 10px;">
+                </div>
+                <div class="portfolio-description">
+                    <h3>Graphic Design</h3>
+                    <p>千と千尋の神隠し raccoon ver.</p>
+                </div>
+            </div>
+
+            <div class="portfolio-container">
+                <div class="portfolio-image">
+                    <img src="images/atlantis.png" alt="atlantis" style="width:100%; border-radius: 10px;">
+                </div>
+                <div class="portfolio-description">
+                    <h3>Senior Project</h3>
+                    <p>ATLANTIS hall</p>
+                </div>
+            </div>
+
+            <div class="portfolio-container">
+                <div class="portfolio-image">
+                    <img src="images/Photography 2.jpg" alt="atlantis" style="width:100%; border-radius: 10px;">
+                </div>
+                <div class="portfolio-description">
+                    <h3>Photography</h3>
+                    <p>loc. 鶴岡八幡宮</p>
+                </div>
+            </div>
+        </section>
+
+
+        <div>
+        <section id="Timetable">
+            <h2>WEB DESIGN - TIMETABLE</h2>
+            <table>
+                <tr>
+                    <th colspan="1">Time/Date</th>
+                    <th colspan="1">Mon</th>
+                    <th colspan="1">Tue</th>
+                    <th colspan="1">Wed</th>
+                    <th colspan="1">Thu</th>
+                    <th colspan="1">Fri</th>
+                </tr>
+                <tr>
+                    <th>9:00~10:40</th>
+                    <td rowspan="6">-</td>
+                    <td rowspan="6">-</td>
+                    <td rowspan="2">Artificial Intelligence in Games</td>
+                    <td rowspan="2">Web design and programming</td>
+                    <td rowspan="2">-</td>
+                </tr>
+                <tr>    
+                    <th>10:50~12:30</th>
+                </tr>
+                <tr>
+                    <th>13:20~15:00</th>
+                    <td>japan language I</td>
+                    <td rowspan="3">プロジェクト演習４</td>
+                    <td>Seminar on Social Aspects of Technology I</td>
+                </tr>
+                <tr>
+                    <th>15:10~16:50</th>
+                    <td rowspan="3">-</td>
+                    <td rowspan="3">-</td>
+                </tr>
+                <tr>
+                    <th>17:00~18:40</th>
+                </tr>
+                <tr>    
+                    <th>18:50~20:30</th>
+                    <td>-</td>
+                </tr>
+                </table>
+        </section>
+        <br><br><br>
+
+
+        <footer>
+            <p>Copyright & Design by qlwcxr-2024 &reg</p>
+        </footer>
+    </div>
+    </body>   
+    </html> 

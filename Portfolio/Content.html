@@ -1,0 +1,92 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Content</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+                section{
+                    margin: auto;
+            }
+            .content_{
+                margin: auto;
+                margin-top: 10%;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        
+        <button onclick="topFunction()" id="backToTopBtn" title="Go to top">
+            <img src="logos/icon/up-arrow.png" alt="Back to Top">
+        </button>
+    
+        <script>
+            // 获取按钮
+            var mybutton = document.getElementById("backToTopBtn");
+    
+            // 当用户向下滚动 20px 时，显示按钮
+            window.onscroll = function() {scrollFunction()};
+    
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+    
+            // 当用户点击按钮时，回到顶部
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+
+        
+        <nav class="top">
+            <ul>
+                <li><a href="intro.html">Intro</a></li>
+                <li><a href="previous works.html">previous works</a></li>
+                <li><a href="Content.html">content</a></li>
+                <li class="sider-menu-toggle" ><a href="homepage.html"><img src="logos/icon/home.png" width="25" height="25" alt="home_icon">
+                </a></li>
+            </ul> 
+        </nav>
+
+        <div class="content_">
+            <section>
+                <div>
+                        <p><strong>phone: </strong>xxx-xxxx-xxxx</p>
+                        <p><strong>gmail: </strong>z124039@shibaura-it.ac.jp</p>
+                        <p><strong>IG: </strong>qlwcxr</p>
+
+                </div>
+            </section>
+        </div> 
+        <section>
+            <div class="icons">
+                <a href="https://www.instagram.com/qlwcxr?igsh=cHpvYzl3OXoxanA0&utm_source=qr">
+                    <img src="logos/icon/IG.png" alt="Instagram" style="width: 70px; height: 70px;">
+                </a>
+
+                <a href="https://line.me/ti/p/uRW6G0xpyG">
+                    <img src="logos/icon/Line.png" alt="Line" style="width: 70px; height: 70px;">
+                </a>
+
+                <a href="https://www.youtube.com/@user-xl4jt3zk3y/videos">
+                    <img src="logos/icon/youtube.png" alt="YouTube" style="width: 70px; height: 70px;">
+                </a>
+            </div>
+        </section>
+        <br>
+
+
+        <footer>
+            <p>Copyright & Design by qlwcxr-2024 &reg</p>
+        </footer>
+    </div>
+    </body> 

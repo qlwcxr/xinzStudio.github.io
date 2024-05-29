@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>homepage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <style>
+           body{
+            background-image: url('images/background.gif');
+            background-size: cover;
+            height: 100vh;
+            padding:0;
+            margin:0;
+        } 
+        footer {
+            text-align: center;
+            font-size: .9em;
+            padding: 1em;
+            grid-area: footer;
+            color: #000000;
+            background: hsla(205, 32%, 74%, 0.372);  
+            border-radius: 3px;
+            margin-top: auto; /* 將footer置於頁面底部 */
+        }
+
+        
+        /*intro*/
+        nav, footer {
+            background: hsla(0, 0%, 100%, 0.635);  
+            border-radius: 3px;
+        }
+        nav ul li a:link, nav ul li a:visited  {
+            color: #000000;
+        }
+        nav ul li a:focus, nav ul li a:hover, nav ul li a:active {
+            color: #1825b8b8;
+        }
+        .sider-menu-toggle {
+            margin-left: auto; /* 使用 margin-left: auto; 将该项推到右侧 */
+            color: #a6aee1;
+            cursor: pointer;
+        }
+        </style>
+    </head>
+
+    <body>
+        <button onclick="topFunction()" id="backToTopBtn" title="Go to top">
+            <img src="logos/icon/up-arrow.png" alt="Back to Top">
+        </button>
+    
+        <script>
+            // 获取按钮
+            var mybutton = document.getElementById("backToTopBtn");
+    
+            // 当用户向下滚动 20px 时，显示按钮
+            window.onscroll = function() {scrollFunction()};
+    
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                } else {
+                    mybutton.style.display = "none";
+                }
+            }
+    
+            // 当用户点击按钮时，回到顶部
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+         <nav class="top">
+            <ul>
+                <li><a href="intro.html">Intro</a></li>
+                <li><a href="previous works.html">previous works</a></li>
+                <li><a href="Content.html">content</a></li>
+                <li class="sider-menu-toggle" ><a href="homepage.html"><img src="logos/icon/home.png" width="25" height="25" alt="home_icon">
+                </a></li>
+            </ul> 
+        </nav>
+
+
+
+        <div>
+            <p style="font-size: 80px; font-family: Arial Black; text-align: center; color: #ffffffa6; position: absolute; top: 35%; left: 50%; transform: translate(-50%, -50%);">PORTFOLIO.</p>
+            <p style="text-align: center; margin-top: 30%; color: #ffffffaa; font-style: blod;">xinz Studio</p>
+        </div>
+
+        <footer>
+            <p>Copyright & Design by qlwcxr-2024 &reg</p>
+        </footer>
+    </body>
+</html>
